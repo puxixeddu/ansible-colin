@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://www.stigviewer.com/stigs">
-    <img width="150px" src="https://github.com/colin-mccarthy/cisco_stig/assets/icon.jpg">
-  </a>
-</p>
+
 
 <h1 align="center">
   Cisco Stig:rocket:
