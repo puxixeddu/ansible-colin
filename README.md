@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.stigviewer.com/stigs">
-    <img width="150px" src="https://github.com/colin-mccarthy/cisco_stig/raw/dev/assets/icon.png">
+    <img width="150px" src="https://github.com/colin-mccarthy/cisco_stig/assets/icon.jpg">
   </a>
 </p>
 
