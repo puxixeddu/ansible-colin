@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://www.stigviewer.com/stigs">
+    <img width="150px" src="https://github.com/colin-mccarthy/cisco_stig/raw/dev/assets/icon.png">
+  </a>
+</p>
+
+<h1 align="center">
+  Cisco Stig:rocket:
+</h1>
+
+
 # cisco_stig
 
 ![ansible-lint](https://github.com/colin-mccarthy/cisco_stig/workflows/ansible-lint/badge.svg)
