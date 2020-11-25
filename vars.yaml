@@ -2,3 +2,5 @@
 
 method: radius
 
+default_vlan: 1
+
