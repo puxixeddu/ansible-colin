@@ -1,0 +1,43 @@
+- hosts: all
+  gather_facts: no
+  connection: ansible.netcommon.network_cli
+  
+  vars:
+    ansible_network_os: cisco.ios.ios
+    ansible_network_cli_ssh_type: libssh
+    
+  tasks:
+  - name: run show version command
+    ansible.netcommon.cli_command:
+      command: show version
+
+  - name: run show interface command
+    ansible.netcommon.cli_command:
+       command: show interfaces
+       
+
+       
+       
+#
+# The Cisco switch must uniquely identify all network-connected endpoint devices before establishing any connection.
+#       
+#  - name: (V-101165) uniquely identify all network-connected endpoint devices
+#    ansible.netcommon.cli_config:
+#       config: "foo" 
+#    tags:
+#    - high
+
+
+#
+#. The Cisco switch must have all disabled switch ports assigned to an unused VLAN.
+#       
+#  - name: (V-101205) disabled switch ports assigned to an unused VLAN
+#    ansible.netcommon.cli_config:
+#       config: "foo" 
+#    tags:
+#    - medium
+
+
+
+
+
