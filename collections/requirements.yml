@@ -1,3 +1,4 @@
 ---
 collections:
-- ansible.netcommon.network_cli
+- ansible.netcommon
+- cisco.ios
