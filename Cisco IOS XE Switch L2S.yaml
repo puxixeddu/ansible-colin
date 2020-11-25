@@ -23,11 +23,24 @@
 #
 # https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_usr_8021x/configuration/xe-3se/3850/sec-user-8021x-xe-3se-3850-book/config-ieee-802x-pba.html  
 #
-#  - name: (V-101165) 802.1x authentication
-#    ansible.netcommon.cli_config:
-#       config:
+#  - name: (V-101165) 802.1x authentication I
+#    cisco.ios.ios_config:
+#       lines:
 #         - aaa new-model 
-#         -  aaa authentication dot1x default group "{{ method }}"
+#         - aaa authentication dot1x default group "{{ method }}"
+#         - dot1x system-auth-control  
+#    tags:
+#    - high
+#
+#  - name: (V-101165) 802.1x authentication II
+#    cisco.ios.ios_config:
+#       lines:
+#         - dot1x port-control auto
+#       parents: '{{ item }}'
+#    with_items:
+#    - interface Ethernet1
+#    - interface Ethernet2
+#    - interface GigabitEthernet1
 #    tags:
 #    - high
 
