@@ -65,6 +65,36 @@
 #    - medium
 
 
+
+
+#
+# The Cisco switch must have IP Source Guard enabled on all user-facing or untrusted access switch ports.
+#
+# https://www.cisco.com/en/US/docs/switches/lan/catalyst3850/software/release/3se/consolidated_guide/b_consolidated_3850_3se_cg_chapter_0111100.html
+#
+#       
+#  - name: (V-101187) IP Source Guard enabled I
+#    cisco.ios.ios_config:
+#       lines:
+#         - ip device tracking
+#    tags:
+#    - medium
+#
+#  - name: (V-101187) IP Source Guard enabled II
+#    cisco.ios.ios_config:
+#       lines:
+#         - ip verify source tracking mac-check
+#         - ip device tracking maximum 8
+#       parents: '{{ item }}'
+#    with_items:
+#    - interface Ethernet1
+#    - interface Ethernet2
+#    - interface GigabitEthernet1
+#    tags:
+#    - medium
+
+
+
 #
 # The Cisco switch must have the default VLAN pruned from all trunk ports that do not require it.
 #       
@@ -74,10 +104,7 @@
 #      - name: "{{ trunks }}"
 #        mode: trunk
 #        trunk:
-#          allowed_vlans: 10-20,40
-#          native_vlan: 20
 #          pruning_vlans: "{{ default_vlan }}"
-#          encapsulation: dot1q
 #    state: merged
 #    tags:
 #    - medium
