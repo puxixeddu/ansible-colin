@@ -2,14 +2,14 @@
 
 <h1 align="center">
   Cisco Stig
-<code><img height="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/ansible.svg"></code>
-<code><img height="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/cisco.svg"></code>
 </h1>
 
 
 
 
 ![ansible-lint](https://github.com/colin-mccarthy/cisco_stig/workflows/ansible-lint/badge.svg)
+<code><img height="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/ansible.svg"></code>
+<code><img height="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/cisco.svg"></code>
 
 
 
