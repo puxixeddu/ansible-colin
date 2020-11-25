@@ -4,3 +4,7 @@ method: radius
 
 default_vlan: 1
 
+trunks:
+  - gi0/1
+  - gi0/2
+
