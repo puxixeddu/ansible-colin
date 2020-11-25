@@ -20,16 +20,20 @@
        
 #
 # The Cisco switch must uniquely identify all network-connected endpoint devices before establishing any connection.
-#       
-#  - name: (V-101165) uniquely identify all network-connected endpoint devices
+#
+# https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_usr_8021x/configuration/xe-3se/3850/sec-user-8021x-xe-3se-3850-book/config-ieee-802x-pba.html  
+#
+#  - name: (V-101165) 802.1x authentication
 #    ansible.netcommon.cli_config:
-#       config: "foo" 
+#       config:
+#         - aaa new-model 
+#         -  aaa authentication dot1x default group "{{ method }}"
 #    tags:
 #    - high
 
 
 #
-#. The Cisco switch must have all disabled switch ports assigned to an unused VLAN.
+# The Cisco switch must have all disabled switch ports assigned to an unused VLAN.
 #       
 #  - name: (V-101205) disabled switch ports assigned to an unused VLAN
 #    ansible.netcommon.cli_config:
@@ -37,6 +41,15 @@
 #    tags:
 #    - medium
 
+
+#
+# The Cisco switch must not have the default VLAN assigned to any host-facing switch ports.
+#       
+#  - name: (V-101207) not have the default VLAN assigned to any host-facing switch ports
+#    ansible.netcommon.cli_config:
+#       config: "foo" 
+#    tags:
+#    - medium
 
 
 
