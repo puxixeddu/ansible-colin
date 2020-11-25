@@ -5,7 +5,7 @@
 </h1>
 
 
-# cisco_stig
+
 
 ![ansible-lint](https://github.com/colin-mccarthy/cisco_stig/workflows/ansible-lint/badge.svg)
 
