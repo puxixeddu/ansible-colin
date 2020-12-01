@@ -7,7 +7,7 @@
     ansible_network_cli_ssh_type: libssh
     
   tasks:
-  - name: run show version command
+  - name: no service pad
     ansible.netcommon.cli_config:
       config: no service pad
       
