@@ -17,6 +17,6 @@
        command: show interfaces
     register: interfaces
        
-  - debug: var=version 
+ # - debug: var=version 
  # - debug: var=interfaces
        
