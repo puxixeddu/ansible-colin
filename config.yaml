@@ -11,5 +11,9 @@
     ansible.netcommon.cli_config:
       config: no service pad
       
+  - name: ip ssh version 2
+    ansible.netcommon.cli_config:
+      config: ip ssh version 2
+      
 
    
